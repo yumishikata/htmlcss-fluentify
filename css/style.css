@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #234686;
+  width: 100%;
+}
+
+.header , main , footer {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  padding-top: 15px;
+}
+
+#logo {
+  height: 30px;
+  margin-right: 20px;
+}
+
+#ul_due {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  /* Ho dato 32px ma devo capire bene perché  */
+  transform: translate(0 , -50%);
+
+}
+
+nav ul , nav ul li {
+  display: inline;
+  vertical-align: middle;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+.bottone {
+  display: inline-block;
+  height: 25px;
+  border-radius: 5px;
+  padding: 0 5px;
+  line-height: 25px;
+}
+
+.bot_blu {
+  border: 1px solid white;
+}
+
+.bot_verde {
+  background-color: green;
+  border: 1px solid green;
+}
