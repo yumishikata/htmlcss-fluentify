@@ -5,61 +5,223 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
   background-color: #234686;
   width: 100%;
+  background-image: url(../img/background-header.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-origin: border-box;
+}
+.head_menu::after , .colpage::after , .footer::after{
+  content:'';
+  display: table;
+  clear:both;
+}
+main {
+  width: 100%;
+}
+.barra_main, footer {
+  width: 100%;
+  background-color: lightgrey;
 }
 
-.header , main , footer {
+.header , .footer {
   width: 80%;
   margin: auto;
-  position: relative;
-  padding-top: 15px;
+  /* position: relative; */
 }
 
+.header {
+  padding-top: 15px;
+}
 #logo {
   height: 30px;
   margin-right: 20px;
 }
-
-#ul_due {
-  position: absolute;
-  right: 0;
-  top: 32px;
-  /* Ho dato 32px ma devo capire bene perché  */
-  transform: translate(0 , -50%);
-
+nav {
+  height: 30px;
 }
 
 nav ul , nav ul li {
   display: inline;
   vertical-align: middle;
+
 }
 
-nav ul li a {
+#ul_due {
+  float: right;
+  line-height: 30px;
+}
+
+
+a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+li a {
   margin-left: 15px;
+
 }
 
-.bottone {
+.bottone , .button {
   display: inline-block;
-  height: 25px;
   border-radius: 5px;
-  padding: 0 5px;
+
+}
+.bottone {
+  height: 25px;
   line-height: 25px;
+  padding: 0 5px;
+
 }
 
+.button {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 13px;
+  margin-top: 3vh;
+}
 .bot_blu {
   border: 1px solid white;
 }
 
 .bot_verde {
-  background-color: green;
-  border: 1px solid green;
+  background-color: #4cad4c;
+  border: 1px solid #4cad4c;
+}
+
+.slider {
+  height: 70vh;
+  padding-top: 25vh;
+  color: white;
+}
+
+.slider h1 {
+  font-size: 35px;
+}
+
+.barra_main {
+  height: 20vh;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.barra_main p {
+  padding-top: 3vh;
+  color: grey;
+  font-weight: 500;
+}
+.colpage {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 5vh 0;
+}
+.col3 {
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+.col_middle {
+  padding: 0 30px;
+}
+
+.col3 img {
+  height: 100px;
+}
+
+.col3 h2 {
+  padding: 3vh 0;
+  color: #4cad4c;
+}
+
+.hor_line {
+  display: block;
+  width: 20%;
+  margin: auto;
+  color: grey;
+}
+
+.col3 p {
+  color: grey;
+  padding: 3vh 0;
+  text-align: center;
+  line-height: 4vh;
+  font-weight: 500;
+}
+
+.col2 {
+  float:left;
+  width: 50%;
+  padding: 5vh;
+
+}
+
+.col_left img {
+  width: 100%;
+}
+
+.col2_right {
+  padding-right: 200px;
+}
+
+.col2_right p {
+  padding: 3vh 0;
+  color: grey;
+  font-weight: 500;
+  line-height: 4vh;
+}
+
+.col2_right a {
+  color: #234686;
+  text-transform: none;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.footer {
+  height: 20vh;
+  line-height: 20vh;
+}
+.foot_left {
+  float:left;
+}
+.foot_right {
+  float: right;
+  color: grey;
+}
+
+.foot_right h3{
+  display: inline;
+}
+
+#seleziona {
+  border-bottom: 2px solid grey;
+  margin: 0 30px;
+}
+
+#seleziona::after {
+  content: '\25be';
+  padding-left: 50px;
+}
+
+#help_fixed a{
+  font-size: 15px;
+  padding: 1vh;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  left: 80%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
 }
